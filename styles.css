@@ -8,135 +8,94 @@
     box-sizing: border-box;
 }
 
-
-
-#header {
-    padding: 10px;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    position: fixed;
-    width: 97%;
-    margin: 5px;
-    transition: background-color 0.5s ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+body {
+    background-color: #333 !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
 }
 
-#header h1 {
-    color: white;
+.navbar-brand {
+    color: rgb(254, 138, 166) !important;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
-#header:hover {
-    background-color: #504f4f;
+.navbar-brand:hover {
+    color: #f6456e !important;
+    transition: color 0.8s ease !important;
 }
 
-#header div {
-    display: flex;
-    align-items: center;
+.nav-link,
+.dropdown-item {
+    color: rgb(254, 138, 166) !important;
+    background-color: rgba(254, 138, 166, 0.1) !important;
+    border-radius: 10px;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    background-color: rgba(253, 61, 106, 0.2) !important;
+    border-radius: 10px;
+    transition: background-color 0.5s ease !important;
+}
+
+.footer .text-body {
+    color: rgb(254, 138, 166) !important;
+}
+
+.row .card .card-title {
+    font-weight: bold;
+    color: rgb(254, 138, 166) !important;
+}
+
+.row .card {
+    font-weight: bold;
+    color: rgb(254, 138, 166) !important;
+    background-color: #444;
+    border: none;
 }
 
 .titulo {
     text-align: center;
-    font-size: 3em;
+    font-weight: bold;
     color: #fe8aa6;
-    margin: 20px 0;
-    padding-top: 140px;
-}
-.nav-menu {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    flex-wrap: wrap;
+    margin: 15px;
+    padding-top: 90px;
 }
 
-.menu-item, .dropdown {
-    position: relative;
+hr.thick-hr {
+    border: 0;
+    height: 3px;
+    background-color: rgb(254, 138, 166);
 }
 
-.menu-item a, .dropdown h3 {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-}
-
-.menu-item a:hover, .dropdown:hover h3 {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 180px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    top: 100%;
-    left: 0;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dropdown-content a {
-    color: #333;
-    padding: 0.8rem 1rem;
-    text-decoration: none;
-    display: block;
-    font-size: 1rem;
-}
-
-
-.contenido {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-}
-
-.mision-vision {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    gap: 20px;
-}
-
-.recuadro {
-    text-align: center;
+.recipe-img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    width: 48%;
 }
 
-.recuadro h2 {
-    margin-bottom: 15px;
-    color: #fe8aa6;
+.btn-link {
+    color: rgb(254, 138, 166);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.recuadro .texto {
-    color: #fe8aa6;
-    text-align: justify;
-    line-height: 1.6;
+.btn-link:hover {
+    color: #f6456e;
+    transition: color 0.8s ease;
 }
 
-#footer {
-    width: 100%;
-    height: 80px;
-    background-color: black;
+.card-body p,
+.card-body ul {
     color: #ffffff;
-    padding: 20px;
-    text-align: center;
+    font-weight: 400;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
 }
 
 .imagenes {
@@ -167,39 +126,7 @@
     border-radius: 10px;
 }
 
-
 @media (max-width: 768px) {
-    #header {
-        position: relative;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 5px;
-    }
-
-    #header h1 {
-        font-size: 1.2rem;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-    }
-
-    .menu-item a, .dropdown h3 {
-        font-size: 0.9rem;
-        padding: 0.5rem;
-    }
-
-    .mision-vision {
-        flex-direction: column; 
-        gap: 10px;
-    }
-
-    .recuadro {
-        width: 100%; 
-    }
-
     .imagenes {
         grid-template-areas: "a"
                              "b"
@@ -211,103 +138,11 @@
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
-    .mision-vision {
-        flex-direction: column; 
-        gap: 10px;
-    }
-
-    .recuadro {
-        width: 100%;
-    }
-
     .imagenes {
         grid-template-areas: "a b"
                              "a d"
                              "c d";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, auto);
-    }
-}
-
-
-body {
-    font-family: "Roboto Mono", monospace;
-    background-color: #333;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.platos-fuertes-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.plato {
-    background-color: #2c2c2c;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.plato img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.encabezados {
-    color: #fe8aa6;
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-.texto {
-    color: #ffffff;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.inicio {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.inicio a {
-    color: #fe8aa6;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.inicio a:hover {
-    color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    .platos-fuertes-container {
-        grid-template-columns: 1fr; 
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .titulos {
-        font-size: 1.5rem;
-    }
-
-    .encabezados {
-        font-size: 1.2rem;
-    }
-
-    .texto {
-        font-size: 0.9rem;
     }
 }
