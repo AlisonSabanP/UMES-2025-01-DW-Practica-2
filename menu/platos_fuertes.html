@@ -41,24 +41,24 @@
                         Menú
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Platos fuertes</a></li>
-                            <li><a class="dropdown-item" href="menu/postres.html">Postres</a></li>
+                            <li><a class="dropdown-item active" href="#">Platos fuertes</a></li>
+                            <li><a class="dropdown-item" href="../menu/postres.html">Postres</a></li>
                         </ul>
                     </li>
                     <li class="nav-item m-2">
-                        <a class="nav-link" href="personal/personal.html">Personal</a>
+                        <a class="nav-link" href="../personal/personal.html">Personal</a>
                     </li>
                     <li class="nav-item dropdown m-2">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Recetas
                         </a>
                         <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item active" href="../recetas/recetas-dulces.html">Recetas dulces</a></li>
-                            <li><a class="dropdown-item" href="../recetas/recetas-saladas.html">Recetas saladas</a></li>
+                            <li><a class="dropdown-item" href="../recetas/recetas-dulces.html">Recetas dulces</a></li>
+                            <li><a class="dropdown-item" href="..recetas/recetas-saladas.html">Recetas saladas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item m-2">
-                        <a class="nav-link" href="resenias/resenias.html">Reseñas</a>
+                        <a class="nav-link" href="../resenias/resenias.html">Reseñas</a>
                     </li>
                 </ul>   
             </div>
@@ -68,46 +68,72 @@
     <h2 class="titulo">Platos fuertes</h2>
     <hr class="thick-hr">
 
-    <div class="container-fluid" style="margin-top: 100px !important;">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card bg-dark text-light mx-auto shadow-lg" style="max-width: 400px; border-radius: 15px;">
-                    <div class="card-img-top" style="height: 250px; overflow: hidden; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                        <img src="../imagenes/curry ramen.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Curry Ramen">
-                    </div>
+    <div class="container-fluid py-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card bg-dark h-100 shadow-lg">
+                    <img src="../imagenes/Curry-Ramen.jpg" class="menu-img" alt="Curry Ramen">
                     <div class="card-body text-center">
-                        <h5 class="card-title fs-4">Curry Ramen</h5>
-                        <p class="card-text fs-6">
-                            Un delicioso ramen con curry japonés, acompañado de verduras frescas y carne tierna.
+                        <h2 class="card-title">Curry Ramen</h2>
+                        <p class="text-white">
+                            Caldo a base de pollo, curry hecho en casa y soya, cha siu de cerdo, nabo encurtido, brotes de cilantro, cebollín, hortaliza de temporada, huevo preservado en soya y noodles.
                         </p>
                     </div>
-                    <ul class="list-group list-group-flush bg-dark">
-                        <li class="list-group-item bg-dark text-light fs-5">Precio: Q85.00</li>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item ">Precio: Q85.00</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card bg-dark text-light mx-auto shadow-lg" style="max-width: 400px; border-radius: 15px;">
-                    <div class="card-img-top" style="height: 250px; overflow: hidden; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                        <img src="../imagenes/curry ramen.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Curry Ramen">
-                    </div>
-                    <div class="card-body text-justify">
-                        <h5 class="card-title fs-4">Curry Ramen</h5>
-                        <p class="card-text fs-6">
-                            Caldo a base de pollo, curry hecho en casa y soya, 
-                            cha siu de cerdo, nabo encurtido, brotes de cilantro,
-                            cebollín, hortaliza de temporada, huevo preservado
-                            en soya y noodles.
+
+            <div class="col">
+                <div class="card bg-dark h-100 shadow-lg">
+
+                    <img src="../imagenes/Katsu.jpg" class="menu-img" alt="Katsuo">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Katsuo</h2>
+                        <p class="text-white">
+                            Cerdo frito empanizado, barbacoa de fruta de temporada, repollo blanco fresco y tomate heirloom.
                         </p>
                     </div>
-                    <ul class="list-group list-group-flush bg-dark">
-                        <li class="list-group-item bg-dark text-light fs-5">Precio: Q85.00</li>
+                    <ul class="list-group list-group-flush list-group-ramen">
+                        <li class="list-group-item list-group-item-ramen">Precio: Q75.00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark h-100 shadow-lg">
+
+                    <img src="../imagenes/Shoyu-Vegana.jpg" class="menu-img" alt="Vegana Shoyu">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Vegana Shoyu</h2>
+                        <p class="text-white">
+                            Caldo a base de vegetales sazonado con soya, servido con repollo, hongos confitados, nabo encurtido, brotes de soya, hongo shiitake, hortaliza de temporada, zanahoria, cebollín y noodles.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush list-group-ramen">
+                        <li class="list-group-item list-group-item-ramen">Precio: Q75.00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-dark h-100 shadow-lg">
+
+                    <img src="../imagenes/tantanmenvegana.jpg" class="menu-img" alt="Vegana Tan Tan Men">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Vegana Tan Tan Men</h2>
+                        <p class="text-white">
+                            Caldo a base de vegetales, pasta de ajonjolí, aceite de cebollín, shiitake crujiente cocinado con miso, hortaliza de temporada, repollo, zanahoria, cebollín y noodles.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush list-group-ramen">
+                        <li class="list-group-item list-group-item-ramen">Precio: Q90.00</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
 
     <footer class="footer mt-auto py-3 bg-dark">
         <div class="container">

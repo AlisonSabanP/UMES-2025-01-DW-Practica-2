@@ -10,10 +10,7 @@
 
 body {
     background-color: #333 !important;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #ffffff;
+    color: rgb(254, 138, 166);
 }
 
 .navbar-brand {
@@ -24,39 +21,52 @@ body {
 
 .navbar-brand:hover {
     color: #f6456e !important;
-    transition: color 0.8s ease !important;
+    transition: color 0.8s ease;
+}
+.dropdown-menu {
+    background-color: #444 !important;
 }
 
 .nav-link,
 .dropdown-item {
     color: rgb(254, 138, 166) !important;
-    background-color: rgba(254, 138, 166, 0.1) !important;
-    border-radius: 10px;
+
 }
 
 .nav-link:hover,
 .dropdown-item:hover {
     background-color: rgba(253, 61, 106, 0.2) !important;
-    border-radius: 10px;
-    transition: background-color 0.5s ease !important;
+    border-radius: 10px!important;
+    transition: background-color 0.5s ease;
 }
 
 .footer .text-body {
     color: rgb(254, 138, 166) !important;
 }
 
-.row .card .card-title {
-    font-weight: bold;
-    color: rgb(254, 138, 166) !important;
-}
-
-.row .card {
-    font-weight: bold;
-    color: rgb(254, 138, 166) !important;
+.card {
     background-color: #444;
     border: none;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
 }
 
+.card:hover {
+    background-color: rgba(253, 61, 106, 0.2) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    color: rgb(254, 138, 166) !important;
+    font-weight: bold;
+}
+
+.card-text {
+    color: rgb(254, 138, 166);
+}
+
+/* Títulos y textos */
 .titulo {
     text-align: center;
     font-weight: bold;
@@ -71,33 +81,6 @@ hr.thick-hr {
     background-color: rgb(254, 138, 166);
 }
 
-.recipe-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.btn-link {
-    color: rgb(254, 138, 166);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-link:hover {
-    color: #f6456e;
-    transition: color 0.8s ease;
-}
-
-.card-body p,
-.card-body ul {
-    color: #ffffff;
-    font-weight: 400;
-}
-
-.card-body ul li {
-    margin-bottom: 10px;
-}
-
 .imagenes {
     display: grid;
     gap: 5px;
@@ -109,14 +92,10 @@ hr.thick-hr {
     margin: 15px;
 }
 
-.area-a { grid-area: a; }
-.area-b { grid-area: b; }
-.area-c { grid-area: c; }
-.area-d { grid-area: d; }
-
 .imagenes > div {
     text-align: center;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .imagenes > div > img {
@@ -124,7 +103,18 @@ hr.thick-hr {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
+.imagenes > div > img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.area-a { grid-area: a; }
+.area-b { grid-area: b; }
+.area-c { grid-area: c; }
+.area-d { grid-area: d; }
 
 @media (max-width: 768px) {
     .imagenes {
@@ -145,4 +135,24 @@ hr.thick-hr {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, auto);
     }
+}
+
+.recipe-img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-img {
+    max-height: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.list-group-item {
+    color: rgb(254, 138, 166) !important;
+}
+
+.list-group-item {
+    background-color:  #333!important;
 }
